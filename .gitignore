@@ -1,0 +1,24 @@
+# Data is large and comes from Kaggle -- never commit it
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Everything Spark writes (Delta tables, checkpoints, batch/ML outputs)
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / React
+node_modules/
+dashboard/dist/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

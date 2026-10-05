@@ -1,0 +1,14 @@
+# Python packages for the HOST machine (your laptop), not the Spark container.
+# Used by: producer/producer.py, api/server.py, reports/make_charts.py
+#
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Windows)   |   source .venv/bin/activate  (Linux/Mac)
+#   pip install -r requirements.txt
+
+confluent-kafka>=2.6      # Kafka producer client (has wheels for Python 3.13)
+pandas>=2.2
+pyarrow>=17
+deltalake>=0.22           # reads the Delta tables Spark writes, without needing Spark
+fastapi>=0.115
+uvicorn>=0.32
+matplotlib>=3.9
